@@ -45,34 +45,34 @@ different studies:
 \begin{enumerate}
 \item Quantitatively, it is difficult to make a fair comparison between the
   different studies reviewed.
-Different factors come into play to elucidate this fact.
-Mainly a lack of standardization has to be pointed out in regard to
-experimental evaluation:
-(i) different datasets are used during the evaluation of the frameworks
-developed hindering an inter-study comparison.
-The same conclusion has been recently drawn by~\cite{Litjens2014} supporting
-this argument;
-(ii) the experimental results are not reported with a common metric which leads
-to the inability to compare the different studies.
+  Different factors come into play to elucidate this fact.
+  Mainly a lack of standardization has to be pointed out in regard to
+  experimental evaluation:
+  (i) different datasets are used during the evaluation of the frameworks
+  developed hindering an inter-study comparison.
+  The same conclusion has been recently drawn by~\cite{Litjens2014} supporting
+  this argument;
+  (ii) the experimental results are not reported with a common metric which leads
+  to the inability to compare the different studies.
 
 \item \label{here} However, multiple studies reported some performance
   improvements using \ac{mpmri} techniques instead of mono-parametric imaging
   techniques.
-Considering only the most recent studies proposing \ac{cade}-\ac{cadx}
-frameworks, the following results can be highlighted.
-\citeauthor{Viswanath2011} obtained an \ac{auc} of \SI{77}{\percent} using an
-ensemble learning approach combining the features from the three \ac{mri}
-modalities --- i.e., \ac{t2w}-\ac{mri}, \ac{dce}--\ac{mri}, and
-\ac{dw}-\ac{mri}, while the results obtained as standalone modality range from
-\SIrange{62}{65}{\percent}~\cite{Viswanath2011}.
-\citeauthor{Tiwari2013} drawn similar conclusions by using \ac{t2w}-\ac{mri}
-and \ac{mrsi} modalities as both in standalone and multi-parametric frameworks
-with an improved \ac{auc} ranging from
-\SI{57}{\percent}-\SIrange{76}{85}{\percent}~\cite{Tiwari2013}.
-The most recent work of \citeauthor{Litjens2014} obtained an improved \ac{auc}
-metric from \SI{71}{\percent}-\SI{76}{\percent} considering each modality
-separately --- i.e., \ac{t2w}-\ac{mri}, \ac{dce}-\ac{mri}, and \ac{dw}-\ac{mri}
---- to \SI{89}{\percent} in their \ac{mpmri} framework.
+  Considering only the most recent studies proposing \ac{cade}-\ac{cadx}
+  frameworks, the following results can be highlighted.
+  \citeauthor{Viswanath2011} obtained an \ac{auc} of \SI{77}{\percent} using an
+  ensemble learning approach combining the features from the three \ac{mri}
+  modalities --- i.e., \ac{t2w}-\ac{mri}, \ac{dce}--\ac{mri}, and
+  \ac{dw}-\ac{mri}, while the results obtained as standalone modality range from
+  \SIrange{62}{65}{\percent}~\cite{Viswanath2011}.
+  \citeauthor{Tiwari2013} drawn similar conclusions by using \ac{t2w}-\ac{mri}
+  and \ac{mrsi} modalities as both in standalone and multi-parametric frameworks
+  with an improved \ac{auc} ranging from
+  \SI{57}{\percent}-\SIrange{76}{85}{\percent}~\cite{Tiwari2013}.
+  The most recent work of \citeauthor{Litjens2014} obtained an improved \ac{auc}
+  metric from \SI{71}{\percent}-\SI{76}{\percent} considering each modality
+  separately --- i.e., \ac{t2w}-\ac{mri}, \ac{dce}-\ac{mri}, and \ac{dw}-\ac{mri}
+  --- to \SI{89}{\percent} in their \ac{mpmri} framework.
 
 \item The studies comparing particular combination of more than a single
   modality give rise to the same
@@ -82,83 +82,89 @@ separately --- i.e., \ac{t2w}-\ac{mri}, \ac{dce}-\ac{mri}, and \ac{dw}-\ac{mri}
 \item Unlike the previous remark~\ref{here}, no straightforward conclusions can
   be given regarding the classification performance using each modality in a
   standalone framework.
-The modality being processed by different methods, it does not allow us to
-conclude if a modality by itself is more suited than another.
-However, we are able to distinguish some interesting trends which deserve the
-attention of the community.
-\citeauthor{Tiwari2013} in~\cite{Tiwari2009a,Tiwari2012,Tiwari2013} observed
-that \ac{mrsi} is a more suitable modality than \ac{t2w} to highlight
-\ac{cap}.
-Moreover, \ac{adc} maps have shown a better discriminative power than \ac{t2w}
-as well~\cite{Langer2009,Viswanath2011,Peng2013}.
-Lately, \citeauthor{Litjens2014} observed that \ac{dw}-\ac{mri} modality is
-more suitable than both \ac{dce}-\ac{mri} and \ac{t2w}-\ac{mri} to distinguish
-\ac{cap} in their \ac{cadx} system~\cite{Litjens2014}.
-Recently, \citeauthor{rampun2016computerb} showed, however, some promising
-results using \ac{t2w}-\ac{mri} only in conjunction with textons and \ac{bow};
-this study should be transposed to other \ac{mri}
-modalities~\cite{rampun2016computerb}.
+  The modality being processed by different methods, it does not allow us to
+  conclude if a modality by itself is more suited than another.
+  However, we are able to distinguish some interesting trends which deserve the
+  attention of the community.
+  \citeauthor{Tiwari2013} in~\cite{Tiwari2009a,Tiwari2012,Tiwari2013} observed
+  that \ac{mrsi} is a more suitable modality than \ac{t2w} to highlight
+  \ac{cap}.
+  Moreover, \ac{adc} maps have shown a better discriminative power than \ac{t2w}
+  as well~\cite{Langer2009,Viswanath2011,Peng2013}.
+  Lately, \citeauthor{Litjens2014} observed that \ac{dw}-\ac{mri} modality is
+  more suitable than both \ac{dce}-\ac{mri} and \ac{t2w}-\ac{mri} to distinguish
+  \ac{cap} in their \ac{cadx} system~\cite{Litjens2014}.
+  Recently, \citeauthor{rampun2016computerb} showed, however, some promising
+  results using \ac{t2w}-\ac{mri} only in conjunction with textons and \ac{bow};
+  this study should be transposed to other \ac{mri}
+  modalities~\cite{rampun2016computerb}.
 
 \item Furthermore, \ac{mpmri} has attracted the attention of both radiologists
   and computer vision researchers.
-Indeed, pioneer research groups included new modalities over years when at the
-same time, new research groups directly introduced \ac{mpmri} \ac{cad}
-systems.
-These facts lead us to think that \ac{cap} researches will benefit from
-\ac{mpmri} techniques.
+  Indeed, pioneer research groups included new modalities over years when at the
+  same time, new research groups directly introduced \ac{mpmri} \ac{cad}
+  systems.
+  These facts lead us to think that \ac{cap} researches will benefit from
+  \ac{mpmri} techniques.
 
 \item When focusing on the different modalities used, it can be pointed out
   that only \citeauthor{trigui2017automatic} reported the use of all modalities
   in a single framework by incorporating the \ac{mrsi}
   modality~\cite{trigui2016classification,trigui2017automatic}.
-Although the results reported are promising, the detection has been performed
-at \ac{mrsi} scale and further investigations need to be carried out.
-Nevertheless, \ac{mrsi} has shown some overall good classification performance
-at the price of a lower resolution as well as an increased acquisition time.
-Moreover, \ac{mrsi} analysis is more complex in comparison with the other
-modalities.
-To our mind, \ac{mrsi} could contribute in a \ac{mpmri} framework and should be
-fused with the other modalities.
+  Although the results reported are promising, the detection has been performed
+  at \ac{mrsi} scale.
+  \citeauthor{Lemaitre2016thesis} performed a similar study but at a finer
+  resolution (i.e., \ac{t2w}-\ac{mri})~\cite{Lemaitre2016thesis}.
+  They concluded that \ac{mrsi} was significantly improving the classification
+  performance for \ac{cap} detection.
 
 \item Lately, 3 studies focused on developing a region-based classification in
   which \ac{pz} and \ac{cg} will be analyzed
   separately~\cite{Viswanath2012,Litjens2012,Litjens2014}.
-The promising obtained results indicate that this strategy should be further
-investigated.
+  The promising obtained results indicate that this strategy should be further
+  investigated.
 
 \item Recent studies are using quantitative features in addition to \ac{si}.
-It seems that these quantitative features provide uncorrelated information with
-respect to \ac{si} features and should lead to better classification
-performance when combined all together.
+  It seems that these quantitative features provide uncorrelated information with
+  respect to \ac{si} features and should lead to better classification
+  performance when combined all together.
 
 \item Regarding the methods used in the ``image regularization'' --- i.e.,
   pre-processing, segmentation, and registration --- it is particularly
   difficult to distinguish the benefit of a method over another since none of
   the studies focus on making comparison of these processing stages.
-The focus is usually entirely based on the ``image classification'' framework
-where different methods are directly compared.
-Note that the performance of a classifier is highly linked with the features
-vector extracted from particular data.
-Hence, one can not conclude that a machine learning method is more appropriate
-than another, but we can identify a trend in which \ac{svm} as well as ensemble
-learning classifiers --- i.e., AdaBoost, GentleBoost, and \ac{rf} --- seem to
-perform better than neural network, \ac{lda}, or Naive Bayes.
+  The focus is usually entirely based on the ``image classification'' framework
+  where different methods are directly compared.
+  Note that the performance of a classifier is highly linked with the features
+  vector extracted from particular data.
+  Hence, one can not conclude that a machine learning method is more appropriate
+  than another, but we can identify a trend in which \ac{svm} as well as ensemble
+  learning classifiers --- i.e., AdaBoost, GentleBoost, and \ac{rf} --- seem to
+  perform better than neural network, \ac{lda}, or Naive Bayes.
 
 \item We would like to draw the attention of the reader on the feature
   extraction/selection stage.
-This processing could reduce the complexity and also allow to find a better
-feature space for classification.
-However, few studies are performing such approaches.
-\citeauthor{Niaf2012}, \citeauthor{khalvati2015automated},
-\citeauthor{chung2015prostate}, and \citeauthor{rampun2016computer} are
-successfully applying a scheme to reduce the number of dimensions by selecting
-the most discriminative
-features~\cite{Niaf2011,Niaf2012,khalvati2015automated,chung2015prostate,rampun2016computer,rampun2015computer}.
-It allows them to obtain improved performances compared with a classification
-performed with their initial feature vector.
-Another group of studies also applied different feature extraction
-methods~\cite{Viswanath2008a,Viswanath2008,Viswanath2012,Tiwari2007,Tiwari2008,Tiwari2009,Tiwari2010,Tiwari2012,Tiwari2013,lehaire2014computer,rampun2016computerb,rampun2015classifying}.
-In these specific cases, no comparison is performed against the original data.
+  This processing could reduce the complexity and also allow to find a better
+  feature space for classification.
+  However, few studies are performing such approaches.
+  \citeauthor{Niaf2012}, \citeauthor{khalvati2015automated},
+  \citeauthor{chung2015prostate}, \citeauthor{rampun2016computer}, and \citeauthor{Lemaitre2016thesis} are
+  successfully applying a scheme to reduce the number of dimensions by selecting
+  the most discriminative
+  features~\cite{Niaf2011,Niaf2012,khalvati2015automated,chung2015prostate,rampun2016computer,rampun2015computer,Lemaitre2016thesis}.
+  It allows them to obtain improved performances compared with a classification
+  performed with their initial feature vector.
+  Another group of studies also applied different feature extraction
+  methods~\cite{Viswanath2008a,Viswanath2008,Viswanath2012,Tiwari2007,Tiwari2008,Tiwari2009,Tiwari2010,Tiwari2012,Tiwari2013,lehaire2014computer,rampun2016computerb,rampun2015classifying,Lemaitre2016thesis}.
+  In these specific cases, no comparison is performed against the original
+  data.
+
+\item Currently, only the work of \citeauthor{Lemaitre2016thesis} tackled the
+  problem of balancing in dataset.
+  They found that balancing can have a positive effect on the classification
+  performance.
+  In our humble opinion, classification performance would benefit from further
+  investigation in this area.
 \end{enumerate}
 
 \section{Conclusion}\label{subsec:chp3:dis:gen-dis}
@@ -186,19 +192,11 @@ Regarding segmentation and registration of the prostate, \ac{cad} systems could
 greatly benefit from specific research in these areas which could lead to a
 better automation of those systems.
 
-Additionally, no research focuses on the problem of imbalanced dataset.
+Additionally, few research works focuses on the problem of imbalanced dataset.
 While classifying at the voxel-level, the medical dataset are highly imbalanced
 regarding the frequencies of \ac{cap} against healthy samples.
 Imbalanced data substantially compromises the learning process since most of
 the standard machine learning algorithms expect balanced class distribution or
 an equal misclassification cost~\cite{he2009learning}.
-
 Therefore, it seems important to investigate this field of pattern recognition
 to improve the classification performance while developing \ac{cad} systems.
-
-Therefore, the main objectives of this thesis are to: (i) collect and make
-available the first \ac{mpmri} dataset; (ii) design, develop, and investigate a
-\ac{cad} system taking advantage of all available \ac{mri} modalities; (iii)
-focus on pre-processing methods to improve the classification performance of
-\ac{cad} systems; (iv) investigate the problem of imbalanced dataset in the
-\ac{cad} performance; (v) release source code to allow future benchmarking.
